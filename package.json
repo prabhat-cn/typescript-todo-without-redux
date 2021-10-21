@@ -4,6 +4,7 @@
   "tutorial-link": "https://youtu.be/knqz3_rPcKk",
   "event-type": "https://stackoverflow.com/questions/42081549/typescript-react-event-types",
   "reactIcons": "https://react-icons.github.io/react-icons/",
+  "netlify": "https://taskify-todo-without-redux.netlify.app/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
