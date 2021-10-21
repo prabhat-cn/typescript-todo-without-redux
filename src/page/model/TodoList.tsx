@@ -12,16 +12,14 @@ export interface Props {
 const TodoList: React.FC<Props> = ({ todos, setTodos }: Props) => {
   return (
     <div className="todos">
-      <ul>
-        {todos.map((data) => (
-          <SingleTodo
-            data={data}
-            key={data.id}
-            todos={todos}
-            setTodos={setTodos}
-          />
-        ))}
-      </ul>
+      {todos.map((data) => (
+        <SingleTodo
+          data={data}
+          key={data.id}
+          todos={todos}
+          setTodos={setTodos}
+        />
+      ))}
     </div>
   );
 };
