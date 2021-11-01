@@ -4,7 +4,7 @@ import Tutorial from './page/Tutorial';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" data-test="component-app">
       <h1>Hello Todo!</h1>
       <Tutorial />
       <TodoTask />
