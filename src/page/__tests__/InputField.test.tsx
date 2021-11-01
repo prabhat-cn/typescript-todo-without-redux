@@ -4,6 +4,13 @@ import { shallow } from 'enzyme';
 import '../../setupTests';
 import InputField from '../InputField';
 
-const setup = () => {
+const propsValues = {
+  todo: '',
+  setTodo: ,
+  handleAdd: (e: React.FormEvent<EventTarget>) => void,
+
+}
+
+const setup = ({todo, setTodo, handleAdd}: propsValues) => {
   shallow(<InputField />);
 };
