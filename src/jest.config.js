@@ -11,6 +11,7 @@ module.exports = {
     '\\.[jt]sx?$': 'babel-jest',
     '\\.css$': 'custom-transformer',
   },
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
   verbose: true,
   // coverageReporters: ['jest-junit'],
   // testResultsProcessor: 'jest-junit',

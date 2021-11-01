@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 interface Props {
@@ -12,7 +13,7 @@ const InputField: React.FC<Props> = ({ todo, setTodo, handleAdd }) => {
   // because ref is added in HtmlInputElement if Form the hover on the tag and add FormElement
   const inputRef = useRef<HTMLInputElement>(null);
   return (
-    <div>
+    <div data-test="component-input">
       <form
         className="input"
         onSubmit={(e) => {
@@ -33,6 +34,12 @@ const InputField: React.FC<Props> = ({ todo, setTodo, handleAdd }) => {
       </form>
     </div>
   );
+};
+
+InputField.propTypes = {
+  todo: PropTypes.string.isRequired,
+  setTodo: PropTypes.func.isRequired,
+  handleAdd: PropTypes.func.isRequired,
 };
 
 export default InputField;
